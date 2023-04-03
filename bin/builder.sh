@@ -57,4 +57,4 @@ tar -C "/usr/local/${NAME}/${TOOL_VERSION}" --strip 1 -xf "${file}"
 "/usr/local/${NAME}/${TOOL_VERSION}/bin/node" -v
 
 echo "Compressing ${NAME} ${TOOL_VERSION} for ${CODENAME}-${ARCH}"
-tar -cJf "/cache/${NAME}-${TOOL_VERSION}-${CODENAME}-${ARCH}.tar.xz" -C /usr/local/${NAME} "${TOOL_VERSION}"
+cp -f "${file}" "/cache/${NAME}-${TOOL_VERSION}-${CODENAME}-${ARCH}.tar.xz"
