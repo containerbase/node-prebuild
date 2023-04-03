@@ -51,8 +51,6 @@ if [[ "$file" == "" ]]; then
   exit 1
 fi
 
-ls -la "$file"
-
 mkdir -p "/usr/local/${NAME}/${TOOL_VERSION}"
 tar -C "/usr/local/${NAME}/${TOOL_VERSION}" --strip 1 -xf "${file}"
 
