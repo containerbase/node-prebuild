@@ -1,7 +1,7 @@
 {
   "image": "node",
   "depName": "node",
-  "datasource": "node",
+  "datasource": "node-version",
   "versioning": "semver",
   "startVersion": "14.15.0",
   "ignoredVersions": [],
