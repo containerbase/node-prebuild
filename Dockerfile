@@ -17,6 +17,7 @@ FROM ghcr.io/containerbase/base:9.6.2@sha256:6ea80fd004bbe338c67131c5dc48571d241
 #--------------------------------------
 FROM build-${DISTRO} as builder
 
+COPY --from=containerbase /usr/local/bin/ /usr/local/bin/
 COPY --from=containerbase /usr/local/containerbase /usr/local/containerbase
 
 ENTRYPOINT [ "dumb-init", "--", "builder.sh" ]
