@@ -9,7 +9,7 @@ ARG DISTRO=focal
 FROM ubuntu:focal@sha256:33a5cc25d22c45900796a1aca487ad7a7cb09f09ea00b779e3b2026b4fc2faba as build-focal
 FROM ubuntu:jammy@sha256:aabed3296a3d45cede1dc866a24476c4d7e093aa806263c27ddaadbdce3c1054 as build-jammy
 
-FROM ghcr.io/containerbase/base:9.19.4@sha256:6a468331db72d7b20157c5c2fcd5bc8aef550d6185f72c3c713c4c62c23b0271 as containerbase
+FROM ghcr.io/containerbase/base:9.19.5@sha256:fafe9fc377b2ad1d7232c609ae92b9d45832e0a285afb122d19c7dce8e4168dd as containerbase
 
 
 #--------------------------------------
