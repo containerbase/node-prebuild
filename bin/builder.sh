@@ -8,9 +8,6 @@ set -e
 # trim leading v
 TOOL_VERSION=${1#v}
 
-# shellcheck disable=SC1091
-CODENAME=$(. /etc/os-release && echo "${VERSION_CODENAME}")
-
 NAME=node
 ARCH=$(uname -p)
 farch=x64
@@ -37,7 +34,7 @@ function check_semver () {
 
 check_semver "${TOOL_VERSION}"
 
-echo "Building ${NAME} ${TOOL_VERSION} for ${CODENAME}"
+echo "Building ${NAME} ${TOOL_VERSION} for ${ARCH}"
 checksum_file=$(get_from_url "https://nodejs.org/dist/v${TOOL_VERSION}/SHASUMS256.txt")
 expected_checksum=$(grep "node-v${TOOL_VERSION}-linux-${farch}.tar.xz" "${checksum_file}" | cut -d' ' -f1)
 file=$(get_from_url \
@@ -56,5 +53,5 @@ tar -C "/usr/local/${NAME}/${TOOL_VERSION}" --strip 1 -xf "${file}"
 
 "/usr/local/${NAME}/${TOOL_VERSION}/bin/node" -v
 
-echo "Compressing ${NAME} ${TOOL_VERSION} for ${CODENAME}-${ARCH}"
-cp -f "${file}" "/cache/${NAME}-${TOOL_VERSION}-${CODENAME}-${ARCH}.tar.xz"
+echo "Compressing ${NAME} ${TOOL_VERSION} for ${ARCH}"
+cp -f "${file}" "/cache/${NAME}-${TOOL_VERSION}-${ARCH}.tar.xz"
