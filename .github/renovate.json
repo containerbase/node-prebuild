@@ -7,6 +7,11 @@
       "matchFiles": ["renovate.Dockerfile"],
       "matchUpdateTypes": ["minor"],
       "enabled": true
+    },
+    {
+      "description": "Allow unstable node updates on renovate rebuild trigger files",
+      "matchFiles": ["renovate.Dockerfile"],
+      "ignoreUnstable": false
     }
   ]
 }
