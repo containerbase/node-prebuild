@@ -8,7 +8,7 @@ FROM scratch
 
 # EOL: 2025-04-30
 # renovate: datasource=node-version depName=node
-ENV NODE_VERSION=v18.20.3
+ENV NODE_VERSION=v18.20.4
 
 # EOL: 2026-04-30
 # renovate: datasource=node-version depName=node
