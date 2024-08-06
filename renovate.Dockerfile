@@ -16,4 +16,4 @@ ENV NODE_VERSION=v20.16.0
 
 # current
 # renovate: datasource=node-version depName=node versioning=semver
-ENV NODE_VERSION=v22.5.1
+ENV NODE_VERSION=v22.6.0
