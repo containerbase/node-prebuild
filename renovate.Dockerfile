@@ -12,7 +12,7 @@ ENV NODE_VERSION=v18.20.6
 
 # EOL: 2026-04-30
 # renovate: datasource=node-version depName=node
-ENV NODE_VERSION=v20.18.1
+ENV NODE_VERSION=v20.18.2
 
 # current
 # renovate: datasource=node-version depName=node versioning=semver
