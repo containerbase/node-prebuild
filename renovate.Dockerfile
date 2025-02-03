@@ -3,17 +3,18 @@
 # https://github.com/nodejs/release#release-schedule
 #-------------------------
 
-# makes lint happy
-FROM scratch
 
 # EOL: 2025-04-30
-# renovate: datasource=node-version depName=node
-ENV NODE_VERSION=v18.20.6
+FROM node:18.20.6@sha256:720eeea325b3da50e108ba34dde0fd69feeb3c59485199c5e22b0ea49a792aa5
 
 # EOL: 2026-04-30
-# renovate: datasource=node-version depName=node
-ENV NODE_VERSION=v20.18.2
+FROM node:20.18.2@sha256:bc3d86568d9a9e062cdf7036367f6e2ce201925e2912758bcd3b0e2657875a63
 
-# current
-# renovate: datasource=node-version depName=node versioning=semver
-ENV NODE_VERSION=v22.13.1
+# EOL: 2027-04-30
+FROM node:22.13.1@sha256:ae2f3d4cc65d251352eca01ba668824f651a2ee4d2a37e2efb22649521a483fd
+
+# EOL: 2025-06-01
+FROM node:23.7.0@sha256:73236efc6d24b792e476251b7bc7b000f45314d0e084dcd6af3d0a54489ad489
+
+# EOL: 2028-04-30
+# FROM node:24.0.0
