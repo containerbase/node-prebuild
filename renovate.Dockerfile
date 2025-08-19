@@ -7,21 +7,21 @@
 FROM scratch
 
 # EOL: 2026-04-30
-# renovate: datasource=docker
+# renovate: datasource=github-releases packageName=nodejs/node
 RUN install-tool node 20.19.4
 
 # EOL: 2026-04-30
-# renovate: datasource=docker
+# renovate: datasource=github-releases packageName=nodejs/node
 RUN install-tool node 20.19.4
 
 # EOL: 2027-04-30
-# renovate: datasource=docker
+# renovate: datasource=github-releases packageName=nodejs/node
 RUN install-tool node 22.18.0
 
 # EOL: 2025-06-01
-# renovate: datasource=docker
+# renovate: datasource=github-releases packageName=nodejs/node
 RUN install-tool node 23.11.1
 
 # EOL: 2028-04-30
-# renovate: datasource=docker
+# renovate: datasource=github-releases packageName=nodejs/node
 RUN install-tool node 24.0.0
