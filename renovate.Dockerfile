@@ -24,4 +24,4 @@ RUN install-tool node 23.11.1
 
 # EOL: 2028-04-30
 # renovate: datasource=github-releases packageName=nodejs/node
-RUN install-tool node 24.7.0
+RUN install-tool node 24.8.0
