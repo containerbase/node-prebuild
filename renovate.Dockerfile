@@ -16,7 +16,7 @@ RUN install-tool node 20.19.5
 
 # EOL: 2027-04-30
 # renovate: datasource=github-releases packageName=nodejs/node
-RUN install-tool node 22.19.0
+RUN install-tool node 22.20.0
 
 # EOL: 2025-06-01
 # renovate: datasource=github-releases packageName=nodejs/node
