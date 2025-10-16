@@ -24,6 +24,7 @@ docker run --rm -it -v ${PWD}/.cache:/cache -e DEBURG=true builder 18.0.0
 
 Optional environment variables
 
-| Name    | Description                   | Default   |
-| ------- | ----------------------------- | --------- |
-| `DEBUG` | Show verbose php build output | `<empty>` |
+| Name             | Description                                     | Default   |
+| ---------------- | ----------------------------------------------- | --------- |
+| `APT_HTTP_PROXY` | Set an APT http proxy for installing build deps | `<empty>` |
+| `DEBUG`          | Show verbose php build output                   | `<empty>` |
