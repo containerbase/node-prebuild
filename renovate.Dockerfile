@@ -8,11 +8,11 @@ FROM scratch
 
 # EOL: 2026-04-30
 # renovate: datasource=github-releases packageName=nodejs/node
-RUN install-tool node 20.19.5
+RUN install-tool node 20.19.6
 
 # EOL: 2026-04-30
 # renovate: datasource=github-releases packageName=nodejs/node
-RUN install-tool node 20.19.5
+RUN install-tool node 20.19.6
 
 # EOL: 2027-04-30
 # renovate: datasource=github-releases packageName=nodejs/node
