@@ -1,4 +1,4 @@
-FROM ghcr.io/containerbase/base:14.7.4@sha256:57468abc14e44f041fe64a5229f8d7d424906d79cd2922c0fdf448914265640d
+FROM ghcr.io/containerbase/base:14.8.2@sha256:58b47dbe20bd525963cc3b025a5a6ff1b1e8a9f2c56220b463ceaa1e41955ec7
 
 ARG APT_HTTP_PROXY
 
