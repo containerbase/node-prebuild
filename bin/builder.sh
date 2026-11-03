@@ -20,7 +20,7 @@ if [[ "${DEBUG}" == "true" ]]; then
   set -x
 fi
 
-SEMVER_REGEX="^(0|[1-9][0-9]*)(\.(0|[1-9][0-9]*))(\.(0|[1-9][0-9]*))$"
+SEMVER_REGEX="^(0|[1-9][0-9]*)(\.(0|[1-9][0-9]*))(\.(0|[1-9][0-9]*))(-[0-9A-Za-z.-]+)?$"
 
 function check_semver () {
   if [[ ! "${1}" =~ ${SEMVER_REGEX} ]]; then
